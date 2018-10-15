@@ -39,14 +39,16 @@ void Game::update()
 		npc->update();
 	}
 
+	if(player.getGlobalBounds)
+
 }
 
 void Game::draw()
 {
 	window->clear();
 	//window->draw(shape);
-	player->draw();
-	npc->draw();
+	player->draw(window);
+	npc->draw(window);
 	window->display();
 }
 

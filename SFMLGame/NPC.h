@@ -13,6 +13,6 @@ public:
 	~NPC();
 	void initialize();
 	void update();
-	void draw();
+	void draw(sf::RenderWindow *t_window);
 };
 #endif
